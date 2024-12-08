@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #333; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-300 via-rose-100 to-indigo-200 flex items-center justify-center min-h-screen text-center text-gray-900 relative">
+
+    <!-- Background Decoration -->
+    <div class="absolute w-full h-full opacity-20 pointer-events-none">
+        <img src="tulip.png" alt="Flower Background" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Container -->
+    <div class="relative bg-white/90 p-6 rounded-lg shadow-lg grid gap-6 max-w-lg w-full z-10">
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-pink-600">Happy Birthday, Dr. Swathi! 🎉</h1>
+        
+        <!-- Wish Box -->
+        <div class="bg-pink-100 text-gray-800 p-4 rounded-lg shadow-md text-lg font-semibold overflow-hidden">
+            <p class="wish-text border-r-2 border-gray-800 animate-typing whitespace-nowrap overflow-hidden w-full"></p>
+        </div>
+
+        <!-- Generate Button -->
+        <button class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-4 rounded-lg font-bold transition generate-btn">
+            Generate Wish
+        </button>
+
+        <!-- Footer -->
+        <div class="text-pink-500 text-lg font-semibold">
+            💖 Caring Healer 💖
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute bottom-4 left-4 hover:scale-110 transition-transform">
+            <img src="images-removebg-preview.png" alt="Birthday Cake" class="w-16">
+        </div>
+        <div class="absolute bottom-4 right-4 hover:scale-110 transition-transform">
+            <img src="happy-birthday-bunny.gif" alt="Birthday Bunny" class="w-20">
+        </div>
+    </div>
+
+    <script src="js file.js"></script>
+</body>
+</html>
